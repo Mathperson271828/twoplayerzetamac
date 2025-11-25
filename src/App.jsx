@@ -212,8 +212,8 @@ const AuthWrapper = ({ children }) => {
       // --- END LOCAL/CANVAS ENVIRONMENT CONFIGURATION ---
 
       // Log the configuration being used to the console for debugging purposes.
-      console.log("Firebase Init: Using appId:", appId);
-      console.log("Firebase Init: Using firebaseConfig:", firebaseConfig);
+      /* console.log("Firebase Init: Using appId:", appId);
+      console.log("Firebase Init: Using firebaseConfig:", firebaseConfig); */
 
       // Validate that the Firebase config is complete before attempting initialization.
       if (!firebaseConfig || Object.keys(firebaseConfig).length === 0 || !firebaseConfig.apiKey || !firebaseConfig.authDomain || !firebaseConfig.projectId) {
