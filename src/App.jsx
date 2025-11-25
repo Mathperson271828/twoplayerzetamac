@@ -189,7 +189,7 @@ const AuthWrapper = ({ children }) => {
       // You MUST replace these placeholders with your actual Firebase project details.
       const localAppId = 'zetamac-multiplayer-game-1096642033412'; // Replace with your Firebase Project ID
       const localFirebaseConfig = {
-        apiKey: "AIzaSyAjpyi4F-AlbkvOPKtQYXk0fT_FVXPyWto", // Replace with your Firebase API Key
+        apiKey: OPENAI_API_KEY, // Replace with your Firebase API Key
         authDomain: "zetamac-multiplayer-game.firebaseapp.com", // Replace with your Auth Domain
         projectId: "zetamac-multiplayer-game", // Replace with your Project ID
         storageBucket: "zetamac-multiplayer-game.appspot.com", // Replace with your Storage Bucket
