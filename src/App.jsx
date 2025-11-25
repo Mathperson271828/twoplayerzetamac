@@ -189,13 +189,20 @@ const AuthWrapper = ({ children }) => {
       // You MUST replace these placeholders with your actual Firebase project details.
       const localAppId = 'zetamac-multiplayer-game-1096642033412'; // Replace with your Firebase Project ID
       const localFirebaseConfig = {
-        apiKey: OPENAI_API_KEY, // Replace with your Firebase API Key
+        /* apiKey: OPENAI_API_KEY, // Replace with your Firebase API Key
         authDomain: "zetamac-multiplayer-game.firebaseapp.com", // Replace with your Auth Domain
         projectId: "zetamac-multiplayer-game", // Replace with your Project ID
         storageBucket: "zetamac-multiplayer-game.appspot.com", // Replace with your Storage Bucket
         messagingSenderId: "1096642033412", // Replace with your Messaging Sender ID
         appId: "1:1096642033412:web:00d355f525568d981a8251", // Replace with your App ID
-        measurementId: "G-KHMTENJKV4" // Replace with your Measurement ID (if Analytics is enabled)
+        measurementId: "G-KHMTENJKV4" // Replace with your Measurement ID (if Analytics is enabled) */
+        apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+        authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+        projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+        storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+        messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+        appId: import.meta.env.VITE_FIREBASE_APP_ID,
+        measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
       };
 
       // Determine which configuration to use based on whether Canvas environment variables are defined.
